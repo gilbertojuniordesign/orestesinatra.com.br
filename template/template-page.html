@@ -1,0 +1,204 @@
+﻿<!doctype html>
+<html lang="pt"><head>
+<title>Conservatório Orestes Sinatra</title>
+<meta charset="utf-8">
+<meta name="author" content="Gilberto Junior">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:300%7CDroid+Sans:400,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/html5-modernizr.js"></script>
+<script src="js/wow.js"></script>
+<script>
+//smooth scroll
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</head>
+
+<body>
+
+<header class="header-page">
+
+<nav class="navbar navbar-fixed-top">
+<!--LOGO FIXO-->
+<div><a href="#" class="logo logo-page animated slideInTop"></a></div>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span> 
+    </button>
+  <div class="collapse navbar-collapse" id="myNavbar">
+
+  <ul class="nav navbar-nav">
+        <li><a class="active" href="#">A escola</a></li>
+        <li><a href="#">Cursos</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Pré-matrícula</a></li>
+        <li><a href="#">Fale conosco</a></li>
+  </ul>
+
+  </div>
+  <div class="nav-social">
+  	<a class="icone-fb" href="#" title="curta-nos no Facebook!"></a>    
+  </div>
+</nav>
+
+</header>
+
+<div class="fill fill-page" style="background-image:url(imagens/musica03.jpg)"></div>
+
+<main>  
+ 
+<div class="container">
+
+  <div class="row">
+  
+    <div class="col-sm-2 animated fadeInLeft" >
+       <nav>
+       <ul class="nav nav-pills nav-stacked ancora">
+        <li><a href="#section1">História</a></li>
+        <li><a href="#section2">Professores</a></li>
+        <li><a href="#section3">Direção</a></li>
+        <li><a href="#section4">Certificações</a></li>
+        <li><a href="#section5">Estrutura</a></li>
+        <li><a href="#section6">Social</a></li>
+      </ul>
+      </nav>
+    </div> 
+     
+  	<div class="col-sm-8">
+    
+        <div class="ancora" id="section1">
+          <h2>Nossa história</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum erat et hendrerit maximus. Donec sed tempor augue. Etiam mi ligula, mollis ut cursus vitae, viverra pulvinar nisl. Nullam faucibus cursus convallis. Nunc at erat sit amet justo luctus gravida vel ut ligula. Nunc nibh ligula, pretium id sem quis, sagittis efficitur metus. Etiam sit amet eleifend ex. Integer dolor felis, finibus a pretium eu, malesuada nec lacus. Sed sit amet odio tellus. Pellentesque ut posuere est. Maecenas tempor justo lorem, sed luctus metus interdum a. Integer turpis tortor, pellentesque id commodo in, iaculis sit amet felis.</p>
+        
+    
+    	<p>Cras non massa felis. Proin ullamcorper nisi in nibh sodales, ac luctus libero ullamcorper. Proin faucibus mattis velit. Donec a dolor at ante rhoncus varius ut at elit. Vivamus vel tempus enim. Nunc ac faucibus est, vitae maximus diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque blandit convallis pretium. Vestibulum consectetur sapien eget lobortis euismod. Sed dolor dui, lobortis at varius sed, posuere id elit. Duis egestas pulvinar dui, in iaculis sem dictum nec. Vestibulum interdum orci quis semper maximus.</p>
+        </div>
+        
+    	<hr>
+        
+        <div class="ancora" id="section2">
+  		  <h2>Professores</h2>
+          
+          <button class="btn-collapse center-block" data-toggle="collapse" data-target="#prof01">Professor 1 (Disciplina) <span class="caret"></span></button>
+          
+          <p id="prof01" class="collapse collapse-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+         <button class="btn-collapse center-block" data-toggle="collapse" data-target="#prof02">Professor 2 (Disciplina) <span class="caret"></span></button>
+          
+          <p id="prof02" class="collapse collapse-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+         <button class="btn-collapse center-block" data-toggle="collapse" data-target="#prof03">Professor 3 (Disciplina) <span class="caret"></span></button>
+          
+          <p id="prof03" class="collapse collapse-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+          
+         <button class="btn-collapse center-block" data-toggle="collapse" data-target="#prof04">Professor 4 (Disciplina) <span class="caret"></span></button>
+          
+          <p id="prof04" class="collapse collapse-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>          
+          
+         <button class="btn-collapse center-block" data-toggle="collapse" data-target="#prof05">Professor 5 (Disciplina) <span class="caret"></span></button>
+          
+          <p id="prof05" class="collapse collapse-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+          
+         <button class="btn-collapse center-block" data-toggle="collapse" data-target="#prof06">Professor 6 (Disciplina) <span class="caret"></span></button>
+          
+          <p id="prof06" class="collapse collapse-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>                    
+          
+         <button class="btn-collapse center-block" data-toggle="collapse" data-target="#prof07">Professor 7 (Disciplina) <span class="caret"></span></button>
+          
+          <p id="prof07" class="collapse collapse-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>          
+          
+         <button class="btn-collapse center-block" data-toggle="collapse" data-target="#prof08">Professor 8 (Disciplina) <span class="caret"></span></button>
+          
+          <p id="prof08" class="collapse collapse-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>          
+          
+         <button class="btn-collapse center-block" data-toggle="collapse" data-target="#prof09">Professor 9 (Disciplina) <span class="caret"></span></button>
+          
+          <p id="prof09" class="collapse collapse-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>  
+                  
+        </div>
+        
+        <hr>
+        
+        <div class="ancora" id="section3">
+  		  <h2>Direção</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </div>
+        
+        <hr>
+        
+        <div class="ancora" id="section4">
+  		  <h2>Certificações</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </div>
+        
+        <hr>
+        
+        <div class="ancora" id="section5">
+  		  <h2>Estrutura</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>                   
+        </div>
+        
+        <hr>
+        
+        <div class="ancora" id="section6">
+  		  <h2>Social</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </div>
+        
+        <hr>
+    
+	</div>
+    
+    <div class="col-sm-2"></div>
+        
+  </div>  
+  
+</div>
+
+</main>
+
+<footer>
+
+<div class="container-fluid">
+
+	<div class="col-sm-4">
+    <h4 class="text-center"><span class="glyphicon glyphicon-share-alt"></span> Fique ligado!</h4>
+    <p class="text-center"><a href="#">Curta no Facebook</a></p>
+    </div>
+
+    <div class="col-sm-4">
+    <h4 class="text-center"><span class="glyphicon glyphicon-map-marker"></span> Onde estamos</h4>
+    <address class="text-center">Rua Beraldo Marcondes, 58 - São Miguel Paulista CEP 08010-070 - São Paulo/SP <a href="#">(ver mapa)</a><br>
+	<span class="glyphicon glyphicon-phone"></span><a href="tel:+5501122970529"> (11) 2297-0529</a></address>
+    </div>
+    
+    <div class="col-sm-4">
+    <p class="autor text-center"><a href="#">Desenvolvido por Gilberto Junior</a></p>
+    </div>
+ 
+</div>
+
+</footer>
+
+</body>
+
+</html>

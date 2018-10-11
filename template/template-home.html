@@ -1,0 +1,234 @@
+﻿<!doctype html>
+<html lang="pt"><head>
+<title>Conservatório Orestes Sinatra</title>
+<meta charset="utf-8">
+<meta name="author" content="Gilberto Junior">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:300%7CDroid+Sans:400,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/html5-modernizr.js"></script>
+<script src="js/wow.js"></script>
+
+<script>
+//add/remove class
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $('.navbar-fixed-bottom');
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            if(header.hasClass('navbar-fixed-bottom')) {
+                header.hide();
+                header.removeClass('navbar-fixed-bottom')
+               .addClass('navbar-fixed-top').fadeIn(500);
+            }
+        } else {
+            if(header.hasClass('navbar-fixed-top'))  {   
+                header.hide();
+                header.removeClass('navbar-fixed-top')
+               .addClass('navbar-fixed-bottom').fadeIn(500);
+            }
+        }
+    });
+});
+</script>
+
+<script>
+//smooth scroll
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<header class="header-home">
+
+<!--LOGO TOPO-->
+<div><a href="#" class="logo logo-home"></a></div>
+
+<nav class="navbar navbar-fixed-bottom">
+
+<!--LOGO FIXO-->
+<div><a href="#" class="logo logo-page animated slideInTop"></a></div>
+
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span> 
+    </button>
+  <div class="collapse navbar-collapse" id="myNavbar">
+
+  <ul class="nav navbar-nav">
+        <li><a href="#">A escola</a></li>
+        <li><a href="#">Cursos</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Pré-matrícula</a></li>
+        <li><a href="#">Fale conosco</a></li>
+  </ul>
+
+  </div>
+  <div class="nav-social">
+  	<a class="icone-fb" href="#" title="curta-nos no Facebook!"></a>    
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol> 
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <div class="item active">
+      <div class="item1 fill-home"></div>
+      <div class="carousel-caption">
+        <p>Cursos livres e técnicos para todas as idades.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item2 fill-home"></div>
+      <div class="carousel-caption">
+        <p>Mais de 50 anos de tradição e qualidade no ensino musical e dramático.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item3 fill-home"></div>
+      <div class="carousel-caption">
+        <p>Sem a música, a vida seria um erro.<br><small>Friedrich Nietzsche</small></p>
+      </div>
+    </div>
+  </div>
+  <div class="scrolldown text-center"><a href="#destaques">role para baixo e nos conheça!</a></div>
+</div> 
+
+</header>
+
+<main>  
+ 
+<div id="destaques" class="container ancora wow animated zoomIn">
+
+  <div class="row">
+  	<div class="col-sm-4 text-center">
+    <h2>Destaque 1</h2>
+    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+    <a href="#" class="btn">Saiba mais</a>
+    </div>
+    
+     <div class="col-sm-4 text-center">
+    <h2>Destaque 2</h2>
+    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+    <a href="#" class="btn">Saiba mais</a>
+    </div>
+  
+     <div class="col-sm-4 text-center">
+    <h2>Destaque 3</h2>
+    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. Mauris pellentesque porttitor risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+    <a href="#" class="btn">Saiba mais</a>    
+    </div>    
+  </div>  
+   
+</div>
+
+<hr>
+
+<div class="container-fluid ancora wow animated zoomIn">
+  <div class="row">
+  	<div class="col-sm-12">
+       <h2>Cursos</h2>
+    </div>
+  </div> 
+  <div class="row">
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><a class="ico ico-canto" href="#">Canto</a></div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><a class="ico ico-piano" href="#">Piano</a></div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><a class="ico ico-orgao" href="#">Órgão</a></div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><a class="ico ico-teclado" href="#">Teclado</a></div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><a class="ico ico-violino" href="#">Violino</a></div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><a class="ico ico-saxofone" href="#">Saxofone</a></div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><a class="ico ico-flauta" href="#">Flauta</a></div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><a class="ico ico-violao" href="#">Violão / Guitarra</a></div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><a class="ico ico-acordeon" href="#">Acordeon</a></div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><a class="ico ico-baixo" href="#">Baixo</a></div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><a class="ico ico-bateria" href="#">Bateria</a></div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"></div>
+  </div>
+</div>  
+
+<hr>
+
+<div class="container ancora wow animated zoomIn">
+  <div class="row">
+  	<div class="col-sm-12">
+       <h2>Eventos</h2>
+    </div>
+  </div> 
+  
+  <div class="row">
+  
+  	    <a href="#">
+        <div class="col-sm-12 col-md-6 eventos">
+         	<h3>Lorem ipsum dolor sit amet<br><small><span class="glyphicon glyphicon-calendar"></span> 18/02/2016</small></h3>
+        	<p class="evento-desc text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. </p>
+        </div></a>
+    
+  	    <a href="#">
+        <div class="col-sm-12 col-md-6 eventos">
+         	<h3>Lorem ipsum dolor sit amet<br><small><span class="glyphicon glyphicon-calendar"></span> 18/02/2016</small></h3>
+        	<p class="evento-desc text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla felis at nunc dapibus pharetra. </p>
+        </div></a>
+        
+  </div>  
+</div>
+
+</main>
+
+<footer>
+
+<div class="container-fluid">
+
+	<div class="col-sm-4">
+    <h4 class="text-center"><span class="glyphicon glyphicon-share-alt"></span> Fique ligado!</h4>
+    <p class="text-center"><a href="#">Curta no Facebook</a></p>
+    </div>
+
+    <div class="col-sm-4">
+    <h4 class="text-center"><span class="glyphicon glyphicon-map-marker"></span> Onde estamos</h4>
+    <address class="text-center">Rua Beraldo Marcondes, 58 - São Miguel Paulista CEP 08010-070 - São Paulo/SP <a href="#">(ver mapa)</a><br>
+	<span class="glyphicon glyphicon-phone"></span><a href="tel:+5501122970529"> (11) 2297-0529</a></address>
+    </div>
+    
+    <div class="col-sm-4">
+    <p class="autor text-center"><a href="#">Desenvolvido por Gilberto Junior</a></p>
+    </div>
+ 
+</div>
+
+</footer>
+
+</body>
+
+</html>
