@@ -1,3 +1,5 @@
 material/
 template/
 ui/
+/**/*.ai
+/**/*.psd
